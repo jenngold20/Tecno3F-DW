@@ -1,0 +1,71 @@
+.encabezado {
+    color: red;
+    font-weight: bold;
+}
+
+/*Background Image*/
+
+
+body{
+    background-image: url("https://cdn5.dibujos.net/dibujos/pintados/202129/una-flor-sonriente-naturaleza-flores-12329145.jpg");
+}
+
+
+
+
+
+/* Background Color*/
+
+/*
+body{
+    background-color: purple;
+}
+*/
+
+
+/*Background Repeat*/
+
+/*
+body{
+    background-image: url("https://cdn5.dibujos.net/dibujos/pintados/202129/una-flor-sonriente-naturaleza-flores-12329145.jpg");
+    /*background-repeat: repeat;*/
+    /*background-repeat: repeat-x;*/
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat-y;*/
+    /*background-repeat: space;*/
+    /*background-repeat: round;  
+
+}
+*/
+
+/*Background Size*/
+
+/*
+body{
+    background-image: url("https://cdn5.dibujos.net/dibujos/pintados/202129/una-flor-sonriente-naturaleza-flores-12329145.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+
+}
+*/
+
+
+
+/*Background Position*/
+
+/*
+body{
+    background-image: url("https://cdn5.dibujos.net/dibujos/pintados/202129/una-flor-sonriente-naturaleza-flores-12329145.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right top;
+    /* background-position: left top; */
+    /* background-position: center top; 
+
+
+}
+*/
+
+
+
+

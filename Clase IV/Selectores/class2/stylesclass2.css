@@ -1,0 +1,10 @@
+/* Clase para bordes redondeados */
+.bordesRedondeados {
+    border-radius: 25px;
+}
+
+/* Clase para un tamaño específico */
+.imgChica {
+    width: 100px;
+    height: 100px;
+}

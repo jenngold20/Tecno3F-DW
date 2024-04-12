@@ -1,0 +1,6 @@
+/* Estilos para todas las etiquetas li */
+li {
+    color: blue; /* Color de texto azul */
+    font-size: 24px; /* Tamaño de fuente de 24px */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+}

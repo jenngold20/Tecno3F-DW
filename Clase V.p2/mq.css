@@ -1,0 +1,79 @@
+/* Estilos básicos para dispositivos móviles (Mobile First) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.box {
+    margin-bottom: 10px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+/* Media query para pantallas con un ancho mínimo de 768px */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        background-color: red;
+    }
+}
+
+/* Media query para pantallas con un ancho mínimo de 1024px */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .box {
+        display: inline-block;
+        width: 30%;
+        margin: 1.5%;
+    }
+
+    .btn {
+        font-size: 18px;
+        background-color: rgb(81, 255, 0);
+
+    }
+
+    header{
+        background-color:blue;
+    }
+}

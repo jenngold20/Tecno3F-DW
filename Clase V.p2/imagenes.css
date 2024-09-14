@@ -1,0 +1,34 @@
+
+/* Reset básico para márgenes y rellenos */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    max-width: 100%; /* Asegura que el contenedor no sea más ancho que su contenedor padre */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la imagen */
+}
+
+/* Estilo para la imagen */
+img {
+    width: 90%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

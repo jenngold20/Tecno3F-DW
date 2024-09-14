@@ -1,0 +1,77 @@
+/* Estilos generales para pantallas grandes */
+body {
+    background-color: rgb(189, 14, 224);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    /* cursor: pointer;
+    cursor: crosshair;
+    cursor: move;
+    cursor: text;
+    cursor: wait;
+    cursor: help; */
+    /* cursor: not-allowed; */
+    cursor: progress;
+    /*cursor: copy;
+    cursor: alias; 
+    cursor: none; 
+    cursor: zoom-in;
+    cursor: zoom-out; */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f50a0a;
+    color:rgb(253, 3, 253);
+    transform: scale(1.05);
+
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(152, 233, 3);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 10px;
+        color:rgb(152, 233, 3);
+        background-color: blue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+}

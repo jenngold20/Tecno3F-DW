@@ -1,0 +1,56 @@
+/* Estilos básicos para dispositivos móviles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: clamp(14px, 2vw + 1rem, 24px);
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.box {
+    margin-bottom: 10px;
+    background-color: lightgray;
+    text-align: center;
+    padding: clamp(10px, 2vw + 10px, 20px);
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: clamp(8px, 1.5vw + 8px, 15px) clamp(16px, 3vw + 16px, 30px);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Media query para pantallas con un ancho mínimo de 768px */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Media query para pantallas con un ancho mínimo de 1024px */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .box {
+        display: inline-block;
+        width: 30%;
+        margin: 1.5%;
+    }
+}

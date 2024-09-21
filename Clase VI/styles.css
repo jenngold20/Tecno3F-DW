@@ -1,0 +1,60 @@
+/* Estilos básicos para todos los ítems */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;           /* Activamos flexbox en el contenedor */
+    flex-direction: row;      /* Podemos usar row, row-reverse, column, column-reverse*/
+    justify-content: flex-start; /* Podemos usar flex-start, flex-end, center, space-between, space-around, space-evenly*/ 
+    align-items: center;      /* Alineamos los ítems en el centro del eje cruzado */
+    flex-wrap: wrap;   /* Permitimos que los ítems se envuelvan si no hay espacio */
+    padding: 20px;
+    border: 2px solid #333;
+    min-height: 200px;
+}
+
+.item {
+    background-color: rgb(228, 173, 230);
+    border: 2px solid #006699;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 100px; /* Los ítems se pueden estirar, encoger y el tamaño base es de 100px */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+/* Diferentes valores de align-self */
+
+
+.item:nth-child(3) {
+    align-self: flex-end;  /* Se alinea al final */
+    background-color: rgb(230, 150, 150);
+}
+
+
+.item:nth-child(1) {
+    align-self: flex-start;  /* Se alinea al principio */
+}
+
+.item:nth-child(2) {
+    align-self: center;  /* Se alinea al centro */
+}
+
+
+.item:nth-child(4) {
+    align-self: stretch;  /* Se estira para llenar el contenedor */
+}
+
+/* Responsive: ajustamos el contenedor para pantallas más chicas */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Cambiamos a una columna en pantallas chicas */
+        justify-content: center;
+    }
+}

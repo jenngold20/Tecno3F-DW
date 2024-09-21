@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Flexbox</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <h1>Demostración de Flexbox</h1>
+    
+    <h2>1. Distribución horizontal (justify-content)</h2>
+    <div class="controls">
+        <button onclick="changeJustify('flex-start')">Inicio</button>
+        <button onclick="changeJustify('center')">Centro</button>
+        <button onclick="changeJustify('flex-end')">Fin</button>
+        <button onclick="changeJustify('space-between')">Espacio entre</button>
+    </div>
+    <div id="container1" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h2>2. Distribución vertical (flex-direction & align-items)</h2>
+    <div class="controls">
+        <button onclick="changeAlign('flex-start')">Inicio</button>
+        <button onclick="changeAlign('center')">Centro</button>
+        <button onclick="changeAlign('flex-end')">Fin</button>
+        <button onclick="changeAlign('stretch')">Estirar</button>
+    </div>
+    <div id="container2" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h2>3. Flex-wrap y flex-grow</h2>
+    <div id="container3" class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+    <script>
+        function changeJustify(value) {
+            document.getElementById('container1').style.justifyContent = value;
+        }
+        function changeAlign(value) {
+            document.getElementById('container2').style.alignItems = value;
+        }
+    </script>
+</body>
+</html>
